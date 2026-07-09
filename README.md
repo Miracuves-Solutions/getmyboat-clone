@@ -1,326 +1,119 @@
-# Getmyboat Clone — White-Label Solution by Miracuves
+# Getmyboat Clone — White-Label Rental & Booking Marketplace Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxboatx.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/getmyboat-clone/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxboat.mimeld.com)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/getmyboat-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/getmyboat-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXBoat** is a production-ready, white-label Getmyboat clone: a complete peer-to-peer rental platform with renter, host, and admin panels — delivered with **100% source code ownership** in **6 working days**.
+
+> 🚗 **See it running before you talk to anyone.** Live traveler app, host dashboard, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/getmyboat-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxboatx.mimeld.com](https://mxboatx.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/getmyboat-clone/#demo) | Users, content, plans, analytics |
+| 📱 Renter App | [mas.mimeld.com](https://mas.mimeld.com) | Search, book, unlock, drive, rate |
+| 🌐 Web Booking | [mxboat.mimeld.com](https://mxboat.mimeld.com) | Full marketplace in browser |
+| 🔑 Host Dashboard | [Solution page → Demo](https://miracuves.com/getmyboat-clone#demo) | Listings, calendar, pricing, payouts |
+| 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/getmyboat-clone#demo) | Hosts, listings, payments, analytics |
 
-Demo credentials: [miracuves.com/getmyboat-clone -> Demo section](https://miracuves.com/getmyboat-clone/#demo)
-
-## What Makes This Getmyboat Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Marine Founders | Launch a boat rental marketplace |
-| Boat Owners | Rent boats directly to customers |
-| Marinas | Digitize boat rental operations |
+Demo credentials for all environments: **[miracuves.com/getmyboat-clone → Demo section](https://miracuves.com/getmyboat-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Getmyboat Clone Different
 
-1. Boat owner lists their boat with photos and pricing
-2. Renter searches, filters, and selects a boat
-3. Renter submits booking request with dates
-4. Owner confirms and payment is processed
-5. Renter enjoys the boat; post-trip review
+Most rental scripts stop at "list + book." This platform ships with the features that actually run a peer-to-peer rental *business*:
 
----
+- **Smart Pricing Engine** — nightly prices adjust to demand, season, and local events — same dynamic-pricing algorithm Airbnb patented
+- **Verified Identity** — 
+- **Multi-Currency + Multi-Language** — government-ID + selfie + driver license verification — production-grade KYC
+- **Stripe Connect Payouts** — hosts can invite co-hosts, operations staff, cleaners — each with their own permission level
+- **Co-Host Permissions** — hosts get paid in their local currency, with 1099 / tax-handling in 30+ countries
 
-## Core Features
+## 📦 Core Features
 
-### Traveler App
-- Search & discover
-- Compare pricing
-- Booking engine
-- Payment gateway
-- Itinerary mgmt
-- Reviews
+**Renter:** search & filters · map view · booking · verification · secure payment · reviews · messaging · multi-language
 
-### Vendor/Agent Panel
-- Inventory listing
-- Booking mgmt
-- Pricing dashboard
-- Analytics
+**Host:** listing wizard · calendar management · smart pricing · guest messaging · payouts · analytics
 
-### Admin Panel
-- Vendor onboarding
-- Commission mgmt
-- Booking analytics
-- Customer support
+**Admin:** host verification · listing moderation · payment escrow · dispute resolution · analytics
 
----
-
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Pricing Optimization** - Suggests optimal rental rates
-- **AI Boat Matching** - Matches renters with perfect boat
-- **AI Price Prediction** - Smart fare forecasting
-- **AI Travel Recommendations** - Personalized destination suggestions
-- **AI Dynamic Packaging** - Custom trip bundles
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Renter App | Search, book, pay |
-| Owner Panel | Listings, bookings, earnings |
-| Admin Panel | Users, insurance, analytics |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Renter App<br/>Flutter]
+    B[Web Booking<br/>Responsive]
+    W[Host Dashboard]
+    AD[Admin Console]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(MongoDB)]
+    G --> ES[Elasticsearch<br/>Listings]
+    ES --> A
+    ES --> B
+    G --> PAY[Stripe Connect]
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps (Android + iOS) · Node.js backend · MongoDB · Stripe Connect · Elasticsearch for listings · Stripe Connect, regional gateways, multi-currency
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js + Express |
-| Database | MongoDB |
-| Payments | Stripe, Razorpay |
-| Maps | Google Maps (marinas) |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$6,699**, transparent on the [solution page](https://miracuves.com/getmyboat-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Commission per booking 10-20%
-- Insurance fees
-- Featured listings
-- Commission per booking
-- Subscription for agents
-- Premium travel insurance
-- Advertising revenue
+Custom rental platforms run $80k–$350k and 5–10 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for host acquisition and demand-side marketing.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Getmyboat Clone — Full Solution Page](https://miracuves.com/getmyboat-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a Rental App Cost in 2026?](https://miracuves.com/getmyboat-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Getmyboat Clone Script in 2026](https://miracuves.com/getmyboat-clone/blog/) features, pricing & launch guide
+- 🧠 [Dynamic Pricing for Rentals](https://miracuves.com/getmyboat-clone/blog/) revenue management, demand
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/getmyboat-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
+
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
+
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## What's Included
+### ⚠️ Note on This Repository
 
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$6,699** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/getmyboat-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
-**What is included:**
-
-- Renter App
-- Owner Panel
-- Admin Panel
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
+*Keywords: getmyboat clone, getmyboat clone script, rental marketplace, white label, peer-to-peer rental, Flutter rental app, Node.js rental platform, booking platform*
 
 ---
-**Pricing:** from **$2,899** — transparent on the [solution page](https://miracuves.com/getmyboat-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
-
----
-
-## Why Not Build From Scratch?
-
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $6,699 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
-
----
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Boat Rental Market (2030) | $25 billion |
-| Key Markets | USA, EU, Caribbean, SEA |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- Boat and yacht rental
-- Fishing charter booking
-- Water sports equipment rental
-- Flight booking
-- Hotel reservations
-- Holiday packages
-- Yacht charters
-- Boat rentals
-
----
-
-## Client Testimonials
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**How much?**
-$6,699.
-
-**Insurance included?**
-Yes.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Dream Yacht Charter Clone](https://github.com/Miracuves-Solutions/DreamYachtCharter-Clone)
-- [Airbnb Clone](https://github.com/Miracuves-Solutions/Airbnb-Clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/getmyboat-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your boat rental marketplace?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/getmyboat-clone](https://miracuves.com/getmyboat-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: getmyboat clone, getmyboat script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Getmyboat Clone
+{MX_NAME}         MXBoat
+{CATEGORY}        Rental & Booking Marketplace Platform
+{DEMO_WEB}        mxboat.mimeld.com
+{PRICE}           $6,699
+{SLUG}            getmyboat-clone
+{SOLUTION_URL}    https://miracuves.com/getmyboat-clone/
+{VERTICAL}        travel_rental_other
+
+See /tmp/verticals/travel_rental_other.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
