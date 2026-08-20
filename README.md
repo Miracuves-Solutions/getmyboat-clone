@@ -1,11 +1,11 @@
 # Getmyboat Clone — White-Label Rental & Booking Marketplace Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxboat.mimeld.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxdemo.mimeld.com)
 [![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/getmyboat-clone/)
-[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/getmyboat-clone/#pricing)
-[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
+[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/getmyboat-clone/#features)
+[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/getmyboat-clone/#features)
 
-**MXBoat** is a production-ready, white-label Getmyboat clone: a complete peer-to-peer rental platform with renter, host, and admin panels — delivered with **100% source code ownership** in **6 working days**.
+**MXDemo** is a production-ready, white-label Getmyboat clone: a complete peer-to-peer rental platform with renter, host, and admin panels — delivered with **100% source code ownership** in **6 working days**.
 
 > 🚗 **See it running before you talk to anyone.** Live traveler app, host dashboard, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/getmyboat-clone#demo). No sales call required.
 
@@ -16,7 +16,7 @@
 | Environment | URL | What you can test |
 |---|---|---|
 | 📱 Renter App | [mas.mimeld.com](https://mas.mimeld.com) | Search, book, unlock, drive, rate |
-| 🌐 Web Booking | [mxboat.mimeld.com](https://mxboat.mimeld.com) | Full marketplace in browser |
+| 🌐 Web Booking | [mxdemo.mimeld.com](https://mxdemo.mimeld.com) | Full marketplace in browser |
 | 🔑 Host Dashboard | [Solution page → Demo](https://miracuves.com/getmyboat-clone#demo) | Listings, calendar, pricing, payouts |
 | 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/getmyboat-clone#demo) | Hosts, listings, payments, analytics |
 
@@ -71,7 +71,7 @@ flowchart LR
 - ✅ 60 days post-launch support + 12 months of free updates
 - ✅ Documentation & handover
 
-**Pricing:** from **$2,899**, transparent on the [solution page](https://miracuves.com/getmyboat-clone/#pricing) — no "contact us for quote" games.
+**Pricing:** from **$2,899**, transparent on the [solution page](https://miracuves.com/getmyboat-clone/#features) — no "contact us for quote" games.
 
 ## 🆚 Why Not Build From Scratch?
 
@@ -80,10 +80,12 @@ Custom rental platforms run $80k–$350k and 5–10 months. A proven white-label
 ## 📚 Resources
 
 - 📖 [Getmyboat Clone — Full Solution Page](https://miracuves.com/getmyboat-clone) (features, pricing, demos, FAQ)
-- 💰 [How Much Does a Rental App Cost in 2026?](https://miracuves.com/getmyboat-clone#pricing) pricing breakdown & what's included
-- 📝 [Best Getmyboat Clone Script in 2026](https://miracuves.com/getmyboat-clone/blog/) features, pricing & launch guide
-- 🧠 [Dynamic Pricing for Rentals](https://miracuves.com/getmyboat-clone/blog/) revenue management, demand
-- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/getmyboat-clone/facts/) every claim we make, verified
+- 💰 [How Much Does a Rental App Cost in 2026?](https://miracuves.com/getmyboat-clone#features) pricing breakdown & what's included
+- 📝 [Best Getmyboat Clone Script in 2026](https://miracuves.com/getmyboat-clone#features) features, pricing & launch guide
+- 🧠 [Dynamic Pricing for Rentals](https://miracuves.com/getmyboat-clone#features) revenue management, demand
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/getmyboat-clone#faq) every claim we make, verified
+- 💻 [Getmyboat Clone — Technical Stack](https://miracuves.com/getmyboat-clone#techstack) languages, databases, infra, payments, hosting
+- 🔄 [Getmyboat Clone — How It Works / User Flow](https://miracuves.com/getmyboat-clone#flow) step-by-step product walkthrough
 
 ## 🏢 About Miracuves
 
@@ -95,7 +97,7 @@ Custom rental platforms run $80k–$350k and 5–10 months. A proven white-label
 
 ### ⚠️ Note on This Repository
 
-This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/getmyboat-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/getmyboat-clone/#features). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
 *Keywords: getmyboat clone, getmyboat clone script, rental marketplace, white label, peer-to-peer rental, Flutter rental app, Node.js rental platform, booking platform*
 
@@ -106,9 +108,9 @@ This repository is a product overview. The full source code is delivered to clie
 TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
 ══════════════════════════════════════════════════
 {APP_NAME}        Getmyboat Clone
-{MX_NAME}         MXBoat
+{MX_NAME}         MXDemo
 {CATEGORY}        Rental & Booking Marketplace Platform
-{DEMO_WEB}        mxboat.mimeld.com
+{DEMO_WEB}        mxdemo.mimeld.com
 {PRICE}           $2,899
 {SLUG}            getmyboat-clone
 {SOLUTION_URL}    https://miracuves.com/getmyboat-clone/
